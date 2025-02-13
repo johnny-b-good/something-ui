@@ -25,4 +25,5 @@ something-ui-*.tgz
 *.sln
 *.sw?
 
+storybook-static
 *storybook.log
