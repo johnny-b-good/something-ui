@@ -32,3 +32,5 @@ export const Textarea: FC<TextareaProps> = ({
     </HeadlessTextarea>
   );
 };
+
+Textarea.displayName = "Textarea";

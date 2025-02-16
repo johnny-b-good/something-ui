@@ -23,3 +23,5 @@ export const Link: FC<LinkProps> = ({ children, className, ...props }) => {
     </a>
   );
 };
+
+Link.displayName = "Link";

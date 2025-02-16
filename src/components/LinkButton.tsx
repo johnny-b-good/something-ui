@@ -46,3 +46,5 @@ export const LinkButton: FC<LinkButtonProps> = ({
     </a>
   );
 };
+
+LinkButton.displayName = "LinkButton";

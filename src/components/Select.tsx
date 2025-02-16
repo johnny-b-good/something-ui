@@ -40,3 +40,5 @@ export const Select = <T extends number | string>({
     </HeadlessSelect>
   );
 };
+
+Select.displayName = "Select";

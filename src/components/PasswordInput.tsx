@@ -33,3 +33,5 @@ export const PasswordInput: FC<PasswordInputProps> = (props) => {
     </div>
   );
 };
+
+PasswordInput.displayName = "PasswordInput";

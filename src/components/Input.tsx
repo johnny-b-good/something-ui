@@ -32,3 +32,5 @@ export const Input: FC<InputProps> = ({
     </HeadlessInput>
   );
 };
+
+Input.displayName = "Input";

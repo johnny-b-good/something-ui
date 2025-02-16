@@ -32,3 +32,5 @@ export const Alert: FC<AlertProps> = ({ status, children, className }) => {
     </div>
   );
 };
+
+Alert.displayName = "Alert";

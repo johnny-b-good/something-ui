@@ -30,3 +30,5 @@ export const Breadcrumbs: FC<BreadcrumbsProps> = ({ className, parts }) => {
     </div>
   );
 };
+
+Breadcrumbs.displayName = "Breadcrumbs";

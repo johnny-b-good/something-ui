@@ -29,3 +29,5 @@ export const Checkbox = ({ className, ...props }: CheckboxProps) => {
     </HeadlessCheckbox>
   );
 };
+
+Checkbox.displayName = "Checkbox";

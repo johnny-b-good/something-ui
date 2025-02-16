@@ -78,3 +78,5 @@ export const Dialog: FC<DialogProps> = ({
     </HeadlessDialog>
   );
 };
+
+Dialog.displayName = "Dialog";

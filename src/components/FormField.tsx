@@ -60,3 +60,5 @@ export const FormField: FC<FormFieldProps> = ({
     </Field>
   );
 };
+
+FormField.displayName = "FormField";

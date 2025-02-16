@@ -81,3 +81,5 @@ export const DropdownMenu = ({
     </Menu>
   );
 };
+
+DropdownMenu.displayName = "DropdownMenu";

@@ -43,3 +43,5 @@ export const Loader: FC = () => {
     </div>
   );
 };
+
+Loader.displayName = "Loader";
