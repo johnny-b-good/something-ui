@@ -1,6 +1,13 @@
 {
-  "name": "something-ui",
-  "private": true,
+  "name": "@something-ui/components",
+  "description": "Basic UI components library built with React, Tailwind CSS, Headless UI and Heroicons.",
+  "homepage": "https://johnny-b-good.github.io/something-ui/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnny-b-good/something-ui.git"
+  },
+  "author": "Anton Melnikov",
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "module": "./dist/index.js",
