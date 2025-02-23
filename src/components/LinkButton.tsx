@@ -1,23 +1,32 @@
 // Lib
 // -----------------------------------------------------------------------------
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import { clsx } from "clsx";
+import { Root } from "@radix-ui/react-slot";
 
 // Props
 // -----------------------------------------------------------------------------
 export interface LinkButtonProps extends React.HTMLProps<HTMLAnchorElement> {
+  asChild?: boolean;
+  children?: ReactNode;
+  className?: string;
+  href?: string;
   variant?: "primary" | "default" | "text";
 }
 
 /** Link button component */
 export const LinkButton: FC<LinkButtonProps> = ({
-  className,
-  variant = "default",
+  asChild,
   children,
+  className,
+  href,
+  variant = "default",
   ...props
 }) => {
+  const Component = asChild ? Root : "a";
+
   return (
-    <a
+    <Component
       className={clsx(
         "flex cursor-pointer items-center gap-2 whitespace-nowrap rounded border px-4 py-2 font-semibold outline-none transition-colors",
         "focus:border-cyan-500 focus:ring focus:ring-cyan-200 focus:ring-opacity-50",
@@ -40,10 +49,11 @@ export const LinkButton: FC<LinkButtonProps> = ({
 
         className,
       )}
+      href={href}
       {...props}
     >
       {children}
-    </a>
+    </Component>
   );
 };
 
