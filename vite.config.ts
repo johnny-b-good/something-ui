@@ -4,6 +4,7 @@ import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import { visualizer } from "rollup-plugin-visualizer";
 import preserveDirectives from "rollup-preserve-directives";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -43,6 +44,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    tailwindcss(),
     preserveDirectives(),
     dts({ rollupTypes: true, tsconfigPath: "./tsconfig.app.json" }),
     visualizer(),
